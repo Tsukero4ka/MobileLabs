@@ -85,6 +85,28 @@
             android:textColorHint="#AAAAAA"
             android:textColor="#FFFFFF" />
 
+        <EditText
+            android:id="@+id/wet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вміст вологи (W)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#BB86FC"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/ash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вміст золи (A)"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#BB86FC"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#FFFFFF" />
+
         <Button
             android:id="@+id/calculateButton"
             android:layout_width="wrap_content"
@@ -101,6 +123,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:textColor="#FFFFFF"
-            android:gravity="center" /> <!-- Центрування тексту -->
+            android:gravity="center" />
     </LinearLayout>
 </ScrollView>
