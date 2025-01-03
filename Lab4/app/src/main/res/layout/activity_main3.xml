@@ -13,52 +13,73 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Перейти до першої сторінки"
-            android:layout_marginTop="16dp" />
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1F1F1F"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
 
         <Button
             android:id="@+id/button_to_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Перейти до другої сторінки"
-            android:layout_marginTop="16dp" />
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1F1F1F"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Визначення струмів КЗ для підстанції Хмельницьких північних електричних мереж"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:id="@+id/voltageText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Середня номінальна напруга"
-            android:textSize="20sp"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC"
             android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/voltage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:background="#1E1E1E"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:padding="12dp" />
 
         <TextView
             android:id="@+id/nom_powerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Номінальне значення потужності"
-            android:textSize="20sp"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC"
             android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/nom_power"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:background="#1E1E1E"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/calculateButton"
@@ -73,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textSize="12sp"
+            android:textSize="20sp"
             android:text="Результати з'являться тут" />
 
     </LinearLayout>
