@@ -1,51 +1,71 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#121212">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Розрахунок сальдо прибутків сонячної електростанції"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/powerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Середньодобова потужність"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
+            android:textSize="18sp"
+            android:textColor="#BBBBBB"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
 
         <EditText
             android:id="@+id/power"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:inputType="numberDecimal" />
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:background="#1E1E1E"
+            android:textColor="#FFFFFF"
+            android:hint="Введіть потужність"
+            android:textColorHint="#666666"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
 
         <TextView
             android:id="@+id/tText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Тариф на електроенергію (B) у грн/кВт*год"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
+            android:textSize="18sp"
+            android:textColor="#BBBBBB"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
 
         <EditText
             android:id="@+id/t"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:inputType="numberDecimal" />
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:background="#1E1E1E"
+            android:textColor="#FFFFFF"
+            android:hint="Введіть тариф"
+            android:textColorHint="#666666"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
 
         <Button
             android:id="@+id/calculateButton"
@@ -53,15 +73,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
             android:textSize="20sp"
-            android:text="Обчислити" />
+            android:text="Обчислити"
+            android:textColor="#FFFFFF"
+            android:background="#388E3C"
+            android:padding="12dp"
+            android:elevation="4dp" />
 
         <TextView
             android:id="@+id/results"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:textSize="16sp"
-            android:text="Результати з'являться тут" />
-
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
     </LinearLayout>
 </ScrollView>
